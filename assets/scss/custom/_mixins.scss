@@ -1,0 +1,28 @@
+@mixin content-max-width ($main-max-content){
+	max-width: ($main-max-content);
+}
+
+@mixin content-min-width ($main-min-content){
+	min-width: ($main-min-content);
+}
+
+@mixin content-align-center {
+	margin: 20px auto;
+}
+
+@mixin general-margin ($general-margin){
+	margin: $general-margin;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+     -moz-box-sizing: $box-model;
+          box-sizing: $box-model;
+}

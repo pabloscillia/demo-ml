@@ -1,0 +1,22 @@
+{
+  "name": "demo-ml",
+  "version": "1.0.0",
+  "description": "Demo for ML",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabloscillia/demo-ml.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pabloscillia/demo-ml/issues"
+  },
+  "homepage": "https://github.com/pabloscillia/demo-ml#readme",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  }
+}

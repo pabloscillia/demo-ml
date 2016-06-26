@@ -1,0 +1,47 @@
+$tab-padding: 10px;
+$tab-default-color: #f4f4f4;
+
+.tabs {
+    padding: $tab-padding;
+}
+ 
+.tabs li {
+    display: block;
+}
+
+.label-content:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.tabs label {
+    display: inline-block;
+    float: left;
+    padding: $tab-padding;
+    color: darken($tab-default-color , 50%);
+    font-weight: normal;
+    background: $tab-default-color;
+    cursor: pointer;
+}
+ 
+.tabs label:hover {
+    background: darken($tab-default-color , 10%);
+}
+ 
+.tab-content {
+    display: none;
+    width: 100%;
+    padding: $tab-padding;
+    border: 1px solid $tab-default-color;
+    @include box-sizing(border-box);
+}
+
+
+.tabs input[type=radio] {
+    display:none;
+}
+ 
+[id^=tab]:checked ~ div[id^=tab-content] {
+    display: block;
+}

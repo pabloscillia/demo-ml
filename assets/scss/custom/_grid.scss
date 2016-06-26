@@ -1,0 +1,26 @@
+[role*="main"] {
+	@include content-max-width (980px);
+	@include content-min-width (900px);
+	@include content-align-center;
+}
+
+h1 {
+	@include general-margin (20px);
+}
+
+[class*="col-1"] {
+    vertical-align: top;
+}
+
+.col-1-1 {
+	width: 100%;
+}
+
+.col-1-2 {
+	width: 50%;
+	display: inline-block
+}
+
+.col-box {
+	@include general-margin (20px);
+}

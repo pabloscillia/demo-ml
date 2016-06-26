@@ -1,0 +1,45 @@
+/* Values */
+
+$general-background: #f4f4f4;
+$product-background: #fff;
+$product-border-color: #ededed;
+$text-lighten: #999;
+
+body {
+	background: $general-background;
+}
+
+[role*="main"] {
+	background: $product-background;
+	border: 1px solid $product-border-color;
+}
+
+.product-image img{
+	max-width: 100%;
+}
+
+.product-info {
+	.price {
+		color: $price-color
+	}
+	.disclaimer {
+		font-size: 11px;
+		color: $text-lighten
+	}
+	.ch-carousel {
+		margin: 20px 0;
+	}
+}
+
+.form-group {
+	margin: 20px 0;
+	label {
+		@include general-margin (0 20px 0 0);
+		min-width: 75px;
+		display: inline-block;
+	}
+	select {
+		@include border-radius (0);
+		min-width: 50px;
+	}
+}
